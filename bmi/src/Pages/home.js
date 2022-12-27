@@ -4,8 +4,7 @@ function BMI(){
     var wieght = document.getElementsByClassName("weight").value;
     var height = document.getElementsByClassName("height").value;
     let awnser = wieght * height;
-    document.write(awnser)
-    
+    return awnser
 }
 
 const home = () => {
