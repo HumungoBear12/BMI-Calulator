@@ -1,0 +1,21 @@
+.container-tools{
+    display: flex;
+    justify-content:space-evenly;
+    width: 85%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:3rem;
+    button{
+        font-size: 1rem;
+        height:5rem;
+        width:20rem;
+        border-radius: .75rem;
+        background-color:white;
+        // color: lavender;
+        border: white 1px solid !important;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    button:hover{
+        background-color:transparent;
+    }
+}

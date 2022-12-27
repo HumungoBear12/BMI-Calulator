@@ -1,27 +1,34 @@
 import React from 'react'
 
-function BMI(){
-    var wieght = document.getElementsByClassName("weight").value;
-    var height = document.getElementsByClassName("height").value;
-    let awnser = wieght * height;
-    return awnser
-}
+function doMath() {
+  var num = 703;
+  var numOne = document.getElementById('num1').value;
+  var numTwo = document.getElementById('num2').value;
+  var theProduct = (parseInt(numOne) * num ) / (parseInt(numTwo) * parseInt(numTwo));     console.log (theProduct);
+  document.getElementById('ans').innerHTML = theProduct;
+  }
 
 const home = () => {
    
     
     
   return (
-    <div>
-        <h2>BMI Calculator</h2>
-
-        <div>
-            <input className="weight" type="text" placeholder="weight"></input>
-            <input className="height" type="text" placeholder="height"></input>
+    <div className="Container-BMI">
+        <div className="BMI">
+          <h2>BMI Calculator</h2>
+          <hr/>
+            <form>
+                Weight (In Pounds)<br/>
+                <input id="num1" type="text" name="num1"/>
             <br/>
-            <button onClick={BMI} >Submit</button>
-            {/* <input  className="solution" type="button" placeholder="solution"></input> */}
+                Height (In Inches)<br/>
+                <input id="num2" type="text" name="num2"/>
+                <br></br>
+              <input className='button' type="button" value="Calculate Your BMI!" onClick={doMath} /><p/>
+                Your Current BMI: <span id="ans"></span>
+            </form>
         </div>
+        <img src='https://www.fryemedctr.com/sites/frye/assets/uploads/BMI-Widget-Chart.png' alt=''/>
     </div>
   )
 }
